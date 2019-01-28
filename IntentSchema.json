@@ -1,0 +1,810 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "cable plus",
+      "intents": [{
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "CaseGetDescriptionIntent",
+          "slots": [{
+            "name": "Description",
+            "type": "TEXT_VAL"
+          }],
+          "samples": [
+            "My modem is not working from this morning nine A M and I want this to be fixed as soon as possible",
+            "My modem is not working from this morning and I want this to be fixed ASAP",
+            "My modem is not working from this morning and I want this to be fixed as soon as possible",
+            "description is {Description}",
+            "the description is {Description}",
+            "sure I can {Description}",
+            "sure {Description}",
+            "yes {Description}",
+            "yes I can describe {Description}",
+            "yes I can {Description}",
+            "sure I can describe {Description}"
+          ]
+        },
+        {
+          "name": "CaseGetPriorityIntent",
+          "slots": [{
+            "name": "Priority",
+            "type": "CASE_PRIORITY"
+          }],
+          "samples": [
+            "Priority is {Priority}",
+            "{Priority}",
+            "the priority is {Priority}",
+            "set the priority as {Priority}",
+            "let it be {Priority}"
+          ]
+        },
+        {
+          "name": "CaseGetSubjectIntent",
+          "slots": [{
+            "name": "Subject",
+            "type": "TEXT_VAL"
+          }],
+          "samples": [
+            "subject is {Subject}",
+            "the subject is {Subject}",
+            "purpose is {Subject}",
+            "purpose is about {Subject}",
+            "the purpose is {Subject}",
+            "the purpose is about {Subject}"
+          ]
+        },
+        {
+          "name": "CaseStartIntent",
+          "slots": [],
+          "samples": [
+            "to create a new case",
+            "to create case",
+            "to create a case",
+            "I want to create a case",
+            "Hey I want to raise a request",
+            "i want to raise a request",
+            "i want to raise a new request",
+            "raise a request",
+            "raise a new request"
+          ]
+        },
+        {
+          "name": "CheckCaseFieldIntent",
+          "slots": [{
+            "name": "chckCaseFld",
+            "type": "FIELD_NAME"
+          }],
+          "samples": [
+            "I want to know about {chckCaseFld}",
+            "tell me about {chckCaseFld}",
+            "tell me about the {chckCaseFld} of this case",
+            "what's the {chckCaseFld} for this case",
+            "what is the {chckCaseFld}",
+            "tell me about the {chckCaseFld}"
+          ]
+        },
+        {
+          "name": "CheckCaseIntent",
+          "slots": [],
+          "samples": [
+            "tell me some details of a case",
+            "I want to know some detais of a case",
+            "I want to know some details about a case",
+            "Tell me about a case"
+          ]
+        },
+        {
+          "name": "CloseCaseIntent",
+          "slots": [],
+          "samples": [
+            "can you close a case for me",
+            "close my case",
+            "I want to close a case",
+            "close a case",
+            "close a request",
+            "my request is resolved",
+            "close my request",
+            "my issue is fixed",
+            "close my open request"
+          ]
+        },
+        {
+          "name": "HelpIntent",
+          "slots": [],
+          "samples": [
+            "help",
+            "help me",
+            "what can I ask you",
+            "get help",
+            "what commands can I ask",
+            "what commands can I say",
+            "what can I do",
+            "what can I use this for",
+            "what questions can I ask",
+            "what can you do",
+            "what do you do",
+            "how do I use you",
+            "how can I use you",
+            "what can you tell me"
+          ]
+        },
+        {
+          "name": "ListNewCasesRequest",
+          "slots": [],
+          "samples": [
+            "can you read all my cases for today",
+            "how many cases do I have ",
+            "How many cases do I have today",
+            "can you read my cases for today",
+            "can you read all cases assigned to me today",
+            "can you read all the cases assigned to me today",
+            "read all my new cases",
+            "what are my cases today",
+            "tell me all the cases for me today",
+            "read all my open cases",
+            "read all the cases for today"
+          ]
+        },
+        {
+          "name": "MyCalendarIntent",
+          "slots": [],
+          "samples": [
+            "how is my calendar looking today",
+            "to check my calendar"
+          ]
+        },
+        {
+          "name": "StopIntent",
+          "slots": [],
+          "samples": [
+            "nothing  else thank you",
+            "am good",
+            "No Thanks",
+            "Nothing else",
+            "No Thank You",
+            "Am good Thanks",
+            "Am good Thank You",
+            "Nope am good Thanks"
+          ]
+        },
+        {
+          "name": "UpdateCaseCloseIntent",
+          "slots": [{
+            "name": "caseReason",
+            "type": "TEXT_VAL"
+          }],
+          "samples": [
+            "reason is the issue is resolved",
+            "the reason is the issue is resolved",
+            "Reason is {caseReason}",
+            "the reason is {caseReason}"
+          ]
+        },
+        {
+          "name": "UpdateCaseGetNumIntent",
+          "slots": [{
+            "name": "caseNumUpd",
+            "type": "AMAZON.NUMBER"
+          }],
+          "samples": [
+            "Case number is {caseNumUpd}",
+            "here is the case number {caseNumUpd}",
+            "here is the number {caseNumUpd}",
+            "here you go {caseNumUpd}",
+            "the case number is {caseNumUpd}",
+            "request number is {caseNumUpd}",
+            "the request number is {caseNumUpd}"
+          ]
+        },
+        {
+          "name": "UpdateCaseIntent",
+          "slots": [],
+          "samples": [
+            "can you update a case",
+            "can you help in updating a case",
+            "Can you help me updating a case",
+            "Can you help me in updating a case",
+            "can you do a favour of updating a case assigned to me",
+            "can you do a favour of updating a request assigned to me",
+            "can you do a favour of updating my request",
+            "can you do a favour of updating my case",
+            "can you do a favour of updating a case for me",
+            "can you do a favour of updating a request for me",
+            "can you update my request",
+            "Can you update a request for me",
+            "I want to update my request",
+            "I want to update a request that I submitted a while ago",
+            "I want to update a service request",
+            "I want to update my case",
+            "Update a case",
+            "I want to update a case",
+            "Can you update a case for me",
+            "update the case",
+            "I want to update the case",
+            "I want to update that case"
+          ]
+        },
+        {
+          "name": "UpdtGetCaseFieldIntent",
+          "slots": [{
+            "name": "UPDATE_FIELD",
+            "type": "UPD_FLD_NAME"
+          }],
+          "samples": [
+            "I want to update the {UPDATE_FIELD}",
+            "Field is {UPDATE_FIELD}",
+            "the field is {UPDATE_FIELD}",
+            "field name is {UPDATE_FIELD}",
+            "the field name is {UPDATE_FIELD}"
+          ]
+        },
+        {
+          "name": "UpdtGetCaseFieldValIntent",
+          "slots": [{
+            "name": "UPD_FLD_VAL",
+            "type": "UPD_FLD_VAL"
+          }],
+          "samples": [
+            "the value is {UPD_FLD_VAL}",
+            "value is {UPD_FLD_VAL}",
+            "value for that field is {UPD_FLD_VAL}",
+            "Value for the field is {UPD_FLD_VAL}",
+            "the Value for the field is {UPD_FLD_VAL}",
+            "the value for that field is {UPD_FLD_VAL}"
+          ]
+        },
+        {
+          "name": "caseGetUserTypeIntent",
+          "slots": [{
+            "name": "userType",
+            "type": "userType"
+          }],
+          "samples": [
+            "Yes I'm a {userType}",
+            "Sure I'm an {userType}",
+            "I'm {userType}",
+            "Yes i'm an {userType}",
+            "{userType}",
+            "I'm a {userType}",
+            "Sure I'm a {userType}"
+          ]
+        },
+        {
+          "name": "CaseUserAuthenticateIntent",
+          "slots": [{
+            "name": "userPasscode",
+            "type": "AMAZON.NUMBER"
+          }],
+          "samples": [
+            "Passcode is {userPasscode}",
+            "My passcode is {userPasscode}",
+            "Sure My passcode is {userPasscode}"
+          ]
+        },
+        {
+          "name": "CustomerFNameIntent",
+          "slots": [{
+            "name": "FirstName",
+            "type": "FName"
+          }],
+          "samples": [
+            "my first name {FirstName}",
+            "first name {FirstName}",
+            "the first name {FirstName}",
+            "the first name is {FirstName}",
+            "first name is {FirstName}",
+            "My first name is {FirstName}"
+          ]
+        },
+        {
+          "name": "CustomerLNameIntent",
+          "slots": [{
+            "name": "LastName",
+            "type": "LName"
+          }],
+          "samples": [
+            "the last name {LastName}",
+            "the last name is {LastName}",
+            "last name {LastName}",
+            "last name is {LastName}",
+            "my last name is {LastName}",
+            "my last name {LastName}"
+          ]
+        }
+      ],
+      "types": [{
+          "name": "CASE_NUMBER",
+          "values": [{
+            "name": {
+              "value": "00023"
+            }
+          }]
+        },
+        {
+          "name": "CASE_PRIORITY",
+          "values": [{
+              "name": {
+                "value": "High"
+              }
+            },
+            {
+              "name": {
+                "value": "Medium"
+              }
+            },
+            {
+              "name": {
+                "value": "Low"
+              }
+            }
+          ]
+        },
+        {
+          "name": "CASE_STATUS",
+          "values": [{
+              "name": {
+                "value": "New"
+              }
+            },
+            {
+              "name": {
+                "value": "Working"
+              }
+            },
+            {
+              "name": {
+                "value": "Escalated"
+              }
+            },
+            {
+              "name": {
+                "value": "Closed"
+              }
+            }
+          ]
+        },
+        {
+          "name": "FIELD_NAME",
+          "values": [{
+              "name": {
+                "value": "description"
+              }
+            },
+            {
+              "name": {
+                "value": "subject"
+              }
+            },
+            {
+              "name": {
+                "value": "Status"
+              }
+            },
+            {
+              "name": {
+                "value": "Priority"
+              }
+            },
+            {
+              "name": {
+                "value": "Origin"
+              }
+            },
+            {
+              "name": {
+                "value": "case closure comment"
+              }
+            }
+          ]
+        },
+        {
+          "name": "TEXT_VAL",
+          "values": [{
+              "name": {
+                "value": "My modem is not working",
+                "synonyms": [
+                  "these modem issues",
+                  "I have this stupid modem issues from this morning",
+                  "Modem issues",
+                  "Modem not working"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "My modem is not working from this morning and I want this to be fixed as soon as possible"
+              }
+            },
+            {
+              "name": {
+                "value": "My internet is down"
+              }
+            },
+            {
+              "name": {
+                "value": "Is it free"
+              }
+            },
+            {
+              "name": {
+                "value": "urgent"
+              }
+            },
+            {
+              "name": {
+                "value": "emergency"
+              }
+            },
+            {
+              "name": {
+                "value": "TestSubject"
+              }
+            },
+            {
+              "name": {
+                "value": "I'd rather be a bird than a fish."
+              }
+            },
+            {
+              "name": {
+                "value": "Malls are great places to shop; I can find everything I need under one roof."
+              }
+            },
+            {
+              "name": {
+                "value": "Mary plays the piano."
+              }
+            },
+            {
+              "name": {
+                "value": "The waves were crashing on the shore it was a lovely sight."
+              }
+            },
+            {
+              "name": {
+                "value": "We have never been to Asia, nor have we visited Africa."
+              }
+            },
+            {
+              "name": {
+                "value": "random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random random random random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random random random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random random random random random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random random random random random random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random random random random random random random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "random random random random random random random random random random random random random random random random random"
+              }
+            },
+            {
+              "name": {
+                "value": "customer is happy"
+              }
+            },
+            {
+              "name": {
+                "value": "issue resolved"
+              }
+            },
+            {
+              "name": {
+                "value": "cable is not working"
+              }
+            },
+            {
+              "name": {
+                "value": "cable not working"
+              }
+            },
+            {
+              "name": {
+                "value": "cable disconnected"
+              }
+            },
+            {
+              "name": {
+                "value": "cable problem"
+              }
+            },
+            {
+              "name": {
+                "value": "connection problem"
+              }
+            },
+            {
+              "name": {
+                "value": "internet is not working"
+              }
+            },
+            {
+              "name": {
+                "value": "tv is not working"
+              }
+            },
+            {
+              "name": {
+                "value": "issue is resolved"
+              }
+            },
+            {
+              "name": {
+                "value": "resolved"
+              }
+            },
+            {
+              "name": {
+                "value": "the connection problem is resolved"
+              }
+            },
+            {
+              "name": {
+                "value": "internet problem"
+              }
+            },
+            {
+              "name": {
+                "value": "my internet is not working from this morning"
+              }
+            },
+            {
+              "name": {
+                "value": "my internet is not working"
+              }
+            },
+            {
+              "name": {
+                "value": "Issue is resolved. My internet is working now."
+              }
+            },
+            {
+              "name": {
+                "value": "My internet is working now"
+              }
+            },
+            {
+              "name": {
+                "value": "internet working now"
+              }
+            },
+            {
+              "name": {
+                "value": "I want to disconnect my internet connection"
+              }
+            },
+            {
+              "name": {
+                "value": "disconnecting my internet connection"
+              }
+            },
+            {
+              "name": {
+                "value": "I am moving out of town"
+              }
+            },
+            {
+              "name": {
+                "value": "I have a bad service"
+              }
+            }
+          ]
+        },
+        {
+          "name": "UPD_FLD_NAME",
+          "values": [{
+              "name": {
+                "value": "Status"
+              }
+            },
+            {
+              "name": {
+                "value": "Priority"
+              }
+            },
+            {
+              "name": {
+                "value": "Origin"
+              }
+            },
+            {
+              "name": {
+                "value": "Subject"
+              }
+            },
+            {
+              "name": {
+                "value": "Description"
+              }
+            },
+            {
+              "name": {
+                "value": "case closure comment"
+              }
+            }
+          ]
+        },
+        {
+          "name": "UPD_FLD_VAL",
+          "values": [{
+              "name": {
+                "value": "Minor"
+              }
+            },
+            {
+              "name": {
+                "value": "Major"
+              }
+            },
+            {
+              "name": {
+                "value": "Critical"
+              }
+            },
+            {
+              "name": {
+                "value": "Pending approval"
+              }
+            },
+            {
+              "name": {
+                "value": "Pending service request"
+              }
+            },
+            {
+              "name": {
+                "value": "In Progress"
+              }
+            },
+            {
+              "name": {
+                "value": "New"
+              }
+            },
+            {
+              "name": {
+                "value": "Closed"
+              }
+            },
+            {
+              "name": {
+                "value": "Investigation"
+              }
+            },
+            {
+              "name": {
+                "value": "escalated"
+              }
+            }
+          ]
+        },
+        {
+          "name": "userType",
+          "values": [{
+              "name": {
+                "value": "Service Agent"
+              }
+            },
+            {
+              "name": {
+                "value": "Customer"
+              }
+            },
+            {
+              "name": {
+                "value": "Agent"
+              }
+            }
+          ]
+        },
+        {
+          "name": "userPasscode",
+          "values": [{
+              "name": {
+                "value": "96771234"
+              }
+            },
+            {
+              "name": {
+                "value": "96771988"
+              }
+            }
+          ]
+        },
+        {
+          "name": "FName",
+          "values": [{
+            "name": {
+              "value": "Sam"
+            }
+          }]
+        },
+        {
+          "name": "LName",
+          "values": [{
+            "name": {
+              "value": "Jackson"
+            }
+          }]
+        }
+      ]
+    }
+  }
+}
